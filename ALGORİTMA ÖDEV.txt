@@ -1,0 +1,639 @@
+
+Soru1:kullanıcının girdiği iki sayıyı karşılaştırma.(A3-1)(if else)
+1.Başla
+2.Oku sayi1, sayi2
+3.Yaz"Birinci sayıyı girin: "
+4.Yaz"İkinci sayıyı girin: "
+5.Eğer sayi1 != sayi2 ise 6.adıma git
+  değilse yaz"sayi1 eşittir sayi2"
+6.Eğer sayi1 > sayi2 ise 
+  yaz"sayi1 sayi2 den büyüktür"
+  değilse yaz"sayi1 sayi2 den küçüktür"
+7.Bitir
+
+
+
+Soru2:Kullanıcıdan alınan iki tam sayı ile toplama, çarpma, fark, bölüm, ve mod bulma.(A5)(if else)
+1.Başla
+2.Oku sayi1, sayi2, Toplam, Carpim, Mod, Fark, Bolum
+3.Yaz"Birinci sayıyı girin: "
+4.Yaz"İkinci sayıyı girin: "
+5.Toplam = sayi1 + sayi2iint
+6.Carpim = sayi1 * sayi2
+7.Eğer sayi1 =0 sayi2 ise 
+  Fark = 0
+8.Değilse eğer sayi1 > sayi2 ise
+  Fark = sayi1 - sayi2
+9.Değilse Fark = sayi2 -sayi1
+10.Yaz"Toplam:"
+11.Yaz"Çarpım:"
+12.Yaz"Fark:"
+13.Eğer sayi2 == 0 ise
+   Yaz"Mod:Tanımsız"
+   Yaz"Bölüm:Tanımsız"
+14.Değilse 
+   Yaz"Mod:"
+   Yaz"Bölüm:"
+15.Bitir
+
+
+Soru3:Kargo sistemi algoritması
+1.Başla
+2.Oku kg, km, paket_tipi, hizli_teslimat, ucret=0
+3.Yaz"Kargo ağırlığı kaç kg?:"
+4.Eğer kg>0 && kg<=1 ise ucret+=20
+5.Değilse eğer kg>1 && kg<=5 ise ucret+=40
+6.Değilse eğer kg>5 && kg<=10 ise ucret+=70
+7.Değilse eğer kg>10 ise ucret+=150
+8.Yaz"Mesafe kaç km?:"
+9.Eğer km<=100 ise ucret+=10
+10.Değilse eğer km>100 && km<=500 ise ucret+=30
+11.Değilse eğer km>500 ise ucret+=60
+12.Yaz"Paket tipi nedir?(k=kırılgan, n=normal, s=soğuk Ürün): "
+13.Eğer paket_tipi == k ise ucret+=25
+14.Değilse eğer paket_tipi == n ise ucret+=0
+15.Değilse eğer paket_tipi == s ise ucret=40+
+16.Yaz"Hızlı teslimat ister misiniz?(e=evet, h=hayır): "
+17.Eğer hizli_teslimat ==e ise ucret=ucret*1.2
+18.Değilse eğer hizli_teslimat == h ise ucret0+
+18.Yaz"Kargo Ücreti:"
+19.Bitir
+
+
+Soru4:Bilet fiyatı hesaplama
+1.Başla
+2.Oku yas, ogrenci, ucret=150
+3.Yaz"Yaşınızı yazınız: "
+4.Eğer yas<=7 ise ucret+=0
+5.Değilse eğer yas>7 && yas<=18 ise ucret=ucret*0.4
+6.Değilse eğer yas>18 && yas<=25 ise ucret=ucret*0.1
+7.Değilse eğer yas>25 && yas<=64 ise ucret+=0
+8.Değilse eğer yas<=65 ise ucret=ucret*0.3
+9.Yaz"Öğrenci misiniz?(e=evet, h=hayır): "
+10.Eğer ogrenci == h ise ucret+=0
+11.Değilse eğer ogrenci == e ise ucret=ucret*0.2
+12.Yaz"Bilet Ücreti:"
+13.Bitir
+
+Soru5:Noktanın Hangi Bölgede Olduğunu Bulma
+1.Başla
+2.Oku x, y
+3.Yaz"x değerini giriniz(x,y): "
+4.Yaz"y değerini giriniz(x,y): "
+5.Eğer x>0 && y>0 ise
+  Yaz"Konum Birinci Bölgede"
+6.Değilse eğer x<0 && y>0 ise
+  Yaz"Konum İkinci Bölgede"
+7.Değilse eğer x<0 && y<0 ise
+  Yaz"Konum Üçüncü Bölgede"
+8.Değilse eğer x>0 && y<0 ise
+  Yaz"Konum Dördüncü Bölgede"
+9.Değilse eğer x=0 && y=0 ise
+  Yaz"Konum Orijinde"
+10.Bitir
+
+
+Soru6:Kullanıcıdan alınan bilgilerle 2. dereceden Denklemin Kökünü Bulma
+1.Başla
+2.Oku a, b, c, x1, x2, D=b^2 - 4ac
+3.Yaz"a değerini giriniz(a^2*x + b*x + c): "
+4.Yaz"b değerini giriniz(a^2*x + b*x + c): "
+5.Yaz"c değerini giriniz(a^2*x + b*x + c): "
+6.Eğer D>0 ise
+  x1 = (-b + √D) / (2*a)
+  x2 = (-b - √D) / (2*a)
+  Yaz"x1= , x2= "
+
+7.Değilse eğer D<0 ise
+  Yaz"Gerçek kökü yokttur"
+
+8.Değilse eğer D=0 ise
+ x1 = -b / (2*a)
+ x2 = -b / (2*a)
+ Yaz"x1= , x2= "
+
+9.Bitir
+
+
+Soru7:Seçimli hikaye oyunu
+1.Başla
+2.Oku secim
+3.Yaz"Orman yürüyüşü sırasında kayboldunuz, dönüş yolunu bulmalısınız.
+      Karşınıza iki yol çıkıyor.
+      Hangi yoldan gideceksiniz?(1=sağ, 2=sol): "
+4.Eğer secim = 2 ise 
+  Yaz"Yürürken çukura denk geldiniz ve çukura düştünüz. 
+      KAYBETTİNİZ.(t=tekrar oynamak için): "
+  Eğer secim = t ise 3.adıma git.
+  Değilse 12.adıma git
+
+5.Değilse eğer secim = 1 ise
+  Yaz"Bir süre yürüdükten sonra karşınıza iki yol çıkıyor.
+      Sol yola doğru bir sincap görüyorsunuz.
+      Hangi yoldan gideceksiniz?(1=sağ, 2=sol): "
+6.Eğer secim = 1 ise
+  Yaz"Ormanda uzun süre yürüdünüz ve yolunuzu bulamadınız.
+      KAYBETTİNİZ.(t=tekrar oynamak için): "
+  Eğer secim = t ise 3.adıma git.
+  Değilse 12.adıma git
+
+7.Değilse eğer secim = 2
+  Yaz"Sincap sizi bir sürü mantarın olduğu bir yere götürüyor.
+      Acıkmaya başlıyorsunuz.
+      Mantar yiyecek misiniz?(e=evet, h=hayır): "
+8.Eğer secim = e ise
+  Yaz"Mantar zehirliydi, zehirlendiniz.
+      KAYBETTİNİZ.(t=tekrar oynamak için): "
+  Eğer secim = t ise 3.adıma git.
+  Değilse 12.adıma git
+
+9.Değilse eğer secim = h ise
+  Yaz"Mantarlardan yemediniz ve yolunuz devam ettiniz.
+      Bir süre yürüdükten sonra karşınıza iki yol çıkıyor.
+      Sağ yoldan sesler duyuyorsunuz.
+      Hangi yoldan gideceksiniz?(1=sağ, 2=sol): "
+10.Eğer secim = 2 ise 
+   Yaz"Ormanda uzun süre yürüdünüz ve yolunuzu bulamadınız.
+     KAYBETTİNİZ.(t=tekrar oynamak için): "
+  Eğer secim = t ise 3.adıma git.
+  Değilse 12.adıma git
+
+11.Değilse eğer secim = 1 ise
+   Yaz"Seslere doğru yürüdüğünüzde başka yürüyüş ypn kişileri görüyorsunuz.
+       Onlar size yolunuzu bulmanıza yardım ediyor.
+       KAZANDINIZ.(t=tekrar oynamak için): "
+  Eğer secim = t ise 3.adıma git.
+  Değilse 12.adıma git
+12.Bitir
+
+
+Soru8:Sayı notlarını harf notlarına çevirme.
+1.Başla
+2.Oku not,
+3.Yaz"Notunuzu giriniz: "
+4.Eğer not>=0 && note<=100 ise 
+  Değilse 
+  Yaz"Geçerli bir not giriniz" 3. adıma git
+
+5.Eğer not>=0 && not<40 ise
+  Yaz"Notunuz FF"
+6.Değilse eğer not>=40 && not<45 ise
+  Yaz"Notunuz FD"
+7.Değilse eğer not>=45 && not<50 ise
+  Yaz"Notunuz DD"
+8.Değilse eğer not>=50 && not<60 ise
+  Yaz"Notunuz DC"
+9.Değilse eğer not>=60 && not<65 ise
+  Yaz"Notunuz CC"
+10.Değilse eğer not>=65 && not<75 ise
+  Yaz"Notunuz CB"
+11.Değilse eğer not>=75 && not<85 ise
+   Yaz"Notunuz BB"
+12.Değilse eğer not>=85 && not<90 ise
+   Yaz"Notunuz BA"
+13.Değilse eğer not>=90 && not<=100 ise
+   Yaz"Notunuz AA"
+14.Bitir
+
+
+Soru9:spor Salonu Üyelik ve Ücret Hesabı
+1.Başla
+2.Oku ders_sayısı, secim, ucret=0
+3Yaz"Üyelik süresi?(a=aylık, y=yıllık): "
+4.Eğer secim=aylık ise ucret+=200
+5.Değilse eğer secim=yıllık ise ucret+=2000
+6.Yaz"Alacağınız ders sayısı?: "
+7.ucret=ders_sayı*50+ucret
+8.Eğer secim=yıllık && ders_sayısı<=5 ise 
+  ucret=ucret*0.1+ucret
+9.Yaz"Ücret:"
+10.Bitti
+
+
+Soru10:Araba kiralma ücreti hesaplama
+1.Başla
+2.Oku gun_sayisi, koltuk_sayisi, secim, ucret=0
+3.Yaz"Kaç günlük kiralayacaksınız?: "
+4.Yaz"Çocuk koltuğu isteniyor mu?(e=evet, h=hayır): "
+5.Eğer secim=h ise
+  ucret=gun_sayisi*100
+5.Değilse eğer secim=e ise
+Yaz"Çocuk koltuğu kaç tane isteniyor?: "
+6.ucret=koltuk_sayisi*15*gun_sayisi + gun_sayisi*100
+7.Eğer gun_sayisi>=7 ise 
+  ucret=ucret*0.1
+8.Yaz"Ücret:"
+9.Bitir
+
+
+
+Soru11:Kullanıcıdan alınan bilgilerle para yatırma ve çekme
+1.Başla
+2.Oku bakiye=0, islem, miktar   
+3.while bakiye >= 300 
+4.Yaz"Yapılacak işlem(1=para çek, 2=Para yatır): "
+5.Eğer islem == 1 ise
+  Yaz"Miktarı giriniz: "
+  bakiye += miktar
+  Yaz"Bakiye:"
+
+6.Değilse eğer islem == 2 ise
+  Yaz"Miktarı giriniz: "
+  Eğer miktar > bakiye ise
+  Yaz"Yetersiz Bakiye!
+      Bakiye:"
+  4. adıma git
+  Değilse
+  bakiye -= miktar
+  Yaz"Bakiye:"
+
+7.Yaz"Bakiye:"
+8.Bitir
+
+
+Soru12:Kullanıcıdan alınan bilgilerle araç yakıt kullanım takibi
+1.Başla
+2.Oku yakit, gun_sayisi=1, toplam_yakit=0, giris_sayisi=0, ortalama=toplam_yakit/gun_sayisi
+3.Yaz"Gün ... yakıt litresi?(çıkış için 0): "
+4..while yakit != 0
+  Eğer yakit < 0
+  Yaz"Geçersiz yakıt miktarı
+  Değilse 
+  toplam_yakit += yakit
+  gun_sayisi++
+  giris_sayisi++
+
+5.Yaz"Gün ... yakıt litresi?(çıkış için 0): "
+6.Eğer giris_sayisi >0 ise
+  Yaz"Toplam Yakıt:"
+  Yaz"Girilen Gün Sayısı:"
+  Yaz"Ortalama Yakıt Tüketimi:"
+7.Bitir
+  
+
+soru13:Kullanıcıdan alınan bilgilerle fatura ödeme
+1.Başla
+2.Oku secim, miktar, elektrik, su, dogalgaz, toplam=elektrik+su+doğalgaz
+3.while (1)
+  Yaz"Ödenecek fatura türü(1=elektrik, 2=su, 3=doğalgaz)(çıkış için 0): "
+  Eğer secim == 0 ise 
+  break
+  
+  Eğer secim >= 1 && secim <=3 ise
+  Yaz"Ödenecek Miktar: "
+    Eğer secim == 1 ise
+    elektrik += miktar
+    
+    Eğer secim == 2 ise
+    su += miktar
+
+    Eğer secim == 3 ise
+    dogalgaz += miktar
+  
+  Değilse
+  Yaz"Hatalı Seçim"
+4.Yaz"Elektrik Ödemesi Toplam: TL"
+5.Yaz"Su Ödemesi Toplam: TL"
+6.Yaz"Doğalgaz Ödemesi Toplam: TL"
+7.Yaz"Toplam Ödeme: TL"
+8.Bitir
+
+
+Soru14:Kullanıcıdan alınan bilgilerle hız durumu kontrol etme
+1.Başla
+2.Oku mesafe=0.0 , hiz, hiz_siniri
+3.Yaz"10 km'lik yolunuzun kaçıncı km'sinde olduğunuzu yazınız(0=çıkış): "
+4.while mesafe <= 10.0
+  Yaz"Anlık Hızınız(km/h):"
+  Eğer hiz == 0 ise
+  Yaz"Araç duruyor"
+  break
+
+  Eğer mesafe >0 && mesafe <= 3.0 ise
+  hiz_siniri == 50
+  Değilse eğer mesafe > 3.0 && mesafe <= 6.0 ise
+  hiz_siniri == 70
+  Değilse eğer mesafe > 6.0 && mesafe <= 10.0 ise
+  hiz_siniri == 90
+  
+  Yaz"Bulunduğunuz Bölgenin Hız Sınırı: km/h"
+
+  Eğer hiz <= hiz_siniri ise
+  Yaz"Hızınız Uygun"
+  Değilse eğer hiz > hiz_siniri && hiz <= hiz_siniri + 10 ise
+  Yaz"UYARI! Hız Sınırını Aştınız"
+  Değilse eğer hiz > hiz_siniri + 10 && hiz <= hiz_siniri + 30 ise
+  Yaz"UYARI! Orta seviye Hız İhlali. CEZA uygulanır"
+  Değilse Yaz"UYARI! İleri Seviye Hız İhlali. Yüksek CEZA uygulanır"
+
+5.Bitir
+
+
+Soru15:
+1.Başla
+2.Oku adim_sayisi, toplam=0, gun_sayisi=0, giris_sayisi=0
+3.Yaz"Gün ... adım sayısı(çıkış için 0): "
+4.while adim_sayisi != 0
+  Eğer adim_sayisi < 0 ise
+  Yaz"Geçerli bir sayı girin"
+  Değilse
+  toplam += adim_sayisi
+  gun_sayisi++
+  giris_sayisi++
+  Yaz"Gün ... adım sayısı(çıkış için 0): "
+
+5.Eğer giris_sayisi > 0 ise
+6.Yaz"Toplam Adım Sayısı:"
+7.Yaz"Toplam Gün Sayısı:"
+8.Bitir
+
+
+Soru16:
+1.Başla
+2.Oku fiyat, toplam=0, urun_sayisi
+3.Yaz"Ürün fiyatı girin(çıkış için 0): "
+4.while fiyat !=0
+5.Eğer fiyat <0 ise
+  Yaz"Geçerli bir sayı giriniz: "
+  Değilse 
+  toplam += fiyat
+  urun_sayisi++
+  Yaz"Ürün fiyatı girin(çıkış için 0): "
+
+6.Eğer urun_sayisi > 0 ise
+  Yaz"Toplam Fiyat:"
+  Yaz"Topal Ürün Sayısı:"
+
+7.Bitir
+
+
+
+
+
+Soru17:Uyku Süresi
+1.Başla
+2.Oku uyku, toplam, gun_sayisi, ortalama=toplam/gun_sayisi
+3.Yaz"Uyku sürenizin kaç saat olduğunu giriniz(çıkış için 0): "
+4.while uyku != 0
+  toplam += uyku
+  gun_sayisi++
+  Yaz"Uyku sürenizin kaç saat olduğunu giriniz(çıkış için 0): "
+
+5.Eğer gun_sayisi == 0 ise
+  Yaz"Uyku süresi girilmedi
+6.Değilse 
+  Yaz"Toplam uyku süresi:"
+  Yaz"Toplam gün sayısı:"
+  Yaz"Ortalam uyku saati:"
+
+7.Eğer ortalama > 0 && ortalama <=6 ise
+  Yaz"Uyku süresi yetersiz."
+  Değilse eğer ortalama > 6 && ortalama <=8 ise
+  Yaz"Uyku süresi normal"
+  Değilse eğer ortalama > 8 ise 
+  Yaz"Uyku süreniz normal üstü"
+
+8.Bitir
+ 
+
+Soru18:Fibonacci
+1.Başla
+2.Oku n, sayi1=0, sayi2=1, i=1, siradaki
+3.Yaz"Kaç fibonacci sayısı istiyorsunuz?: "
+4.Yaz"Fibonacci Dizisi:"
+5.while i<=n 
+  Yaz"sayi1"
+  siradaki = sayi1 + sayi2
+  sayi1 = sayi2
+  sayi2 = siradaki
+  i++
+
+6.Bitir
+
+
+Soru19:Faktoriyel
+1.Başla
+2.Oku n ,faktoriyel=1, i=1
+3.Yaz"Bir pozitif tam sayı giriniz: "
+4.Eğer n<0 ise
+  Yaz"Pozitif sayı giriniz"
+6.Değilse
+  while i<=n
+  faktoriyel *= i
+  i++
+ 7.Yaz"n = faktoriyel"
+
+8.Bitir
+
+
+Soru20:Üretim Bandı Parça Kontrolü
+1.Başla
+2Oku kg, toplam=0, parca_sayisi
+3.Yaz"Parça kaç kg?(çıkış için 0): "
+4.while kg !=0 
+  Eğer kg < 0 ise
+  Yaz"Geçerli bir değer giriniz"
+  Değilse
+  toplam += kg
+  parca_sayisi++
+  Yaz"Parça kaç kg?(çıkış için 0): "
+
+5.Eğer parca_sayisi > 0 ise
+  Yaz"Toplam Ağırlık:"
+  Yaz"Toplam Parça Sayısı:"
+6.Bitir
+ 
+
+
+Soru21:Ürün Fiyatı ve Vergi Hesabı
+1.Başla
+2.Oku fiyat, kdvlifiyat, toplam=0, devam, adet
+3.do
+  Yaz"Ürün fiyatını giriniz: "
+4.if fiyat<= 0
+  Yaz"Geçersiz fiyat" 3.adıma git
+5.Değilse kdvlifiyat=fiyat*2
+6.Yaz"KDV dahil fiyat:"
+7.toplam += kdvlifiyat
+8.adet++
+9.Yaz"Yeni ürün girmek ister misiniz?(e=eveet, h=hayır): "
+10.while
+   devam == 'e' || devam == 'E'
+11.Yaz"Toplam:"
+12.Yaz"Adet:"
+13.Bitir
+
+
+Soru22:
+1.Başla
+2.Oku mevcut_surum, yeni_surum=6.9, devm
+3.do
+  Yaz"Telefonunuzdaki uygulamanın mevcut sürümünü giriniz(Yeni Sürüm = 6.9): "
+  Eğer mevcut_surum < yeni_surum ise
+  Yaz"Yeni bir güncelleme mevcut"
+  Değilse eğer mevcut_surum == yeni_surum ise
+  Yaz"Uygulamanız güncel"
+  Değilse 
+  Yaz"Yanlış Giriş! Mevcut sürüm yeni sürümden büyük olamaz"
+  Yaz"Tekrar kontrol etmek ister misiniz?(e=evet, h=hayır): "
+4.while devam == 'e' || secim == 'E'
+5.Bitir
+
+
+Soru23:Toplu Taşıma Kartı Bakiyesi
+1.Başla
+2.Oku bakiye, ucret=42.5
+3.Yaz"Mevcut bakiyenizi girin: "
+  Eğer bakiye < 0 ise
+  Yaz"Geçersiz Bakiye. Bakiye negatif olamaz"
+4.do
+  Eğer bakiye >= ucret
+    bakiye -= ucret
+    Yaz"Kalan Bakiye:"
+  Değilse 
+  Yaz"Yetersiz Bakiye!
+      Bakiye:
+      Ücret:"
+  Yaz"Tekrar binecek misiniz?(e=evet, h=hayır): "
+5.while secim == 'e' || secim == 'E'
+7.Yaz"Bakiye:"
+8.Bitir
+
+
+Soru24:Günlük Telefon Kullanım Süresi
+1.Başla
+2.Oku sure, toplam=0, gun_sayisi=0, ortalama=toplam/gun_sayisi
+3.do
+  Yaz"Gün ... kullanım süresi(saat)(çıkış için 0): "
+  Eğer sure < 0 ise
+  Yaz"Geçersiz süre"
+  continue
+  
+  Eğer sure != 0
+  toplam += sure
+  gun_sayisi++
+4.while sure != 0
+
+5. Eğer gun_sayisi > 0 ise
+   Yaz"Toplam telefon kullanım süresi:"
+   Yaz"Girilen gün sayısı:"
+   Yaz"Ortalama günlük kullanım süresi:"
+6.Bitir
+
+Soru25:Akıllı Sulama Sistemi Nem Ölçümü
+1.Başla
+2.Oku nem, devam
+3.do
+  Yaz"Nem oranını giriniz(0-100): "
+  Eğer nem < 0 || nem >100 ise
+  Yaz"Hatalı değer!"
+  Değilse eğer nem >=0 && nem < 40 ise
+  Yaz"Nem düşük"
+  Değilse eğer nem >=40 && nem <70 ise
+  Yaz"Nem yeterli"
+  Değilse 
+  Yaz"Nem yüksek"
+
+  Yaz"Tekrar ne değeri girilecek mi?(e=evet, h=hayır): "
+4.while devam == 'e' || devam == 'E'
+5.Bitir
+
+
+Soru26:Fırın Üretim Takip Sistemi
+1.Başla
+2.Oku ekmek=0, toplam=0
+3.do
+  Yaz"Üretilen ekmek sayısı: "
+  Eğer ekmek < 0 ise
+  Yaz"Geçersiz sayı"
+  Değilse
+  toplam += ekmek
+4.while toplam < 120
+5.Yaz"Toplam ekmek sayısı:"
+6.Bitir
+
+
+
+Soru27:Müşteri Hizmet Sırası
+1.Başla
+2.Oku musteri, toplam=0, dakika=0
+3.do
+  Yaz"Gelen müşteri sayısı: "
+  Eğer musteri < 0 ise
+  Yaz"Geçersiz değer"
+  Değilse 
+  toplam += musteri
+  dakika++
+4.while dakika < 60
+5.Yaz"1 saatteki müşteri sayısı:"
+6.Bitir
+
+
+
+Soru28:Para Biriktirme
+1.Başla
+2.Oku miktar, toplam=0
+3.do
+  Yaz"Eklenen para miktarı: "
+  Eğer miktar < 0 ise
+  Yaz"Geçersiz değer"
+  Değilse
+  toplam += miktar
+4.while toplam < 300
+5.Yaz"Toplam para:"
+6.Bitir
+
+
+Soru29:
+1.Başla
+2.Oku internet
+3.do
+  Yaz"Kullanılan MB değeri: "
+  Eğer internet < 0 ise
+  Yaz"Geçersiz değer"
+  Değilse
+  toplam += internet
+4.while internet < 5000
+5.Yaz"Kullanılan toplam internet:"
+6.Bitir
+
+
+Soru30:
+1.Başla
+2.Oku secim, adet
+3.do
+  Yaz"Kahve türü seçiniz(1=Türk Kahvesi, 2=Latte, 3=Espresso)(çıkış için 0): "
+  Eğer secim != 1 || secim !=2 || secim != 3 || secim != 0 ise
+  Yaz"Geçerli bir değer girin"
+  continue
+  Değilse
+  Yaz"Kaç adet istiyorsunuz?: "
+  Eğer adet <= 0 ise
+  Yaz" Geçersiz değer"
+  continue
+  break
+4.while 1
+5.Yaz"Adet:"
+6.Eğer secim == 1 ise
+  Yaz"Kahve Türü: Türk kahvesi"
+  Değilse eğer secim == 2 ise
+  Yaz"Kahve Türü: Latte"
+  Değilse eğer secim == 3 ise
+  Yaz"Kahve Türü: Espresso"
+7.Bitir
+
+
+
+Soru31:
+1.Başla
+2.Oku miktar, ay, toplam=0
+3.Yaz"Aylık tasarruf edilen para miktarı: "
+4.for  ay=1; ay<=12; ay++
+  toplam += miktar
+  Yaz"... . ay sonunda toplam birikim: ... TL"
+5.Yaz"1 yıllık toplam birikiminiz: ... TL"
+6.Bitir
+
+
+      
+
